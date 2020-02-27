@@ -154,6 +154,12 @@ annoying && alias find='false 2>/dev/null'
 #Disable which
 annoying && alias which='false 2>/dev/null'
 
+#Make SSH say connection refused
+insane && function ssh { sleep 2; echo "ssh: connect to host $(echo $1 | sed -n -e 's/.*@//p') port 22: Connection refused"; }
+
+#Make ping say destination host unreachable forever
+annoying && function ping { i=1; echo "PING $1 ($1) 56(84) bytes of data."; while true; do echo "From $1 icmp_seq=$i Destination Host Unreachable"; i=$((i+1)); sleep 1; done }
+
 # Disable `unalias` and `alias`.
 alias unalias=false;
 alias alias=false;
