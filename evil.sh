@@ -50,6 +50,9 @@ then
 	((RANDOM % 10)) || set -o errexit;
 fi
 
+#Just exit session when rebooting box
+annoying && alias reboot=exit;
+
 # Let `cat` swallow every input and never return anything.
 annoying && alias cat=true;
 
