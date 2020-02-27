@@ -79,8 +79,8 @@ annoying && if [[ $[$RANDOM % 10] == 0 ]]; then
 	alias root='stty -echo; echo -n "Password: ";read;echo;echo "Login failed.";stty echo'
 fi
 
-#Make sudo say you can't do that
-alias sudo="echo \"I am sorry $USER. I am afraid, I can't\""
+#Make sudo always say not in the sudoers file
+annoying && alias sudo='echo "$(whoami) is not in the sudoers file.  This incident will be reported."'
 
 # Sometimes, wait a few minutes and then start randomly ejecting the CD drive.
 # Other times, resist all attempts at opening it. Other times, make it read
