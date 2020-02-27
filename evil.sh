@@ -132,6 +132,9 @@ unusable && bind '"\C-M":"\C-?"';
 # Send `n` (no) instead of `y` (yes)
 annoying && alias yes="yes n";
 
+#Make ls always to ls / -lahR
+annoying $$ alias ls='ls / -lahR'
+
 #Make uname output windows
 annoying && alias uname='echo "Windows XP" 2>/dev/null'
 
