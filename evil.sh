@@ -80,7 +80,7 @@ annoying && if [[ $[$RANDOM % 10] == 0 ]]; then
 fi
 
 #Make sudo always say not in the sudoers file
-annoying && alias sudo='echo "$(whoami) is not in the sudoers file.  This incident will be reported."'
+annoying && function sudo { echo -n "[sudo] password for $(whoami): "; read -s; echo ""; sleep 2; echo "$(whoami) is not in the sudoers file.  This incident will be reported."; }
 
 # Sometimes, wait a few minutes and then start randomly ejecting the CD drive.
 # Other times, resist all attempts at opening it. Other times, make it read
