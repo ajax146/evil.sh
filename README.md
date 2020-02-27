@@ -12,48 +12,48 @@ Evil suggestions and pull requests are welcome. The only rule is that nothing ob
 ## Modes and what they do
 
 ### By Default
-Makes alias and unalias do nothing
-Makes sudo say it can't do that (Needs to be changed)
+Makes alias and unalias do nothing </br>
+Makes sudo say it can't do that (Needs to be changed) </br>
 
 ### Insane
-Everything by default
-Makes tab send backspace key
-10% chance to end session if command has non zero exit code
-Makes reboot exit the sessions
-Makes sl give ls in reverse
-Shuffles history
-Adds a random number to line on grep
-Makes kill and pkill echo "Process Killed"
-Makes ssh always say connection refused
+Everything by default </br>
+Makes tab send backspace key </br>
+10% chance to end session if command has non zero exit code </br>
+Makes reboot exit the sessions </br>
+Makes sl give ls in reverse </br>
+Shuffles history </br>
+Adds a random number to line on grep </br>
+Makes kill and pkill echo "Process Killed" </br>
+Makes ssh always say connection refused </br>
 
 ### Annoying
-Everything in insane
-Makes cat always return nothing
-Randomly sorts ls
-Makes date add a random number of days
-Messes with CD drives
-Exit opens a new shell
-Inverts if, for, and while
-Makes yes send no
-Sets uname to "Windows XP"
-Makes vim quit automatically
-Switches vi, nano, vim, and emacs around
-Makes find always return nothing
-Makes which always return nothing
-Ping always says Destination Host Unreachable
+Everything in insane </br>
+Makes cat always return nothing </br>
+Randomly sorts ls </br>
+Makes date add a random number of days </br>
+Messes with CD drives </br>
+Exit opens a new shell </br>
+Inverts if, for, and while </br>
+Makes yes send no </br>
+Sets uname to "Windows XP" </br>
+Makes vim quit automatically </br>
+Switches vi, nano, vim, and emacs around </br>
+Makes find always return nothing </br>
+Makes which always return nothing </br>
+Ping always says Destination Host Unreachable </br>
 
 ### Destructive
-Everything in annoying
-Sets the default editor to rm
-Makes clear launch a fork bomb
-Kills random processes and random times
-Makes cp actually move stuff
-Makes sudo shutdown the computer
+Everything in annoying </br>
+Sets the default editor to rm </br>
+Makes clear launch a fork bomb </br>
+Kills random processes and random times </br>
+Makes cp actually move stuff </br>
+Makes sudo shutdown the computer </br>
 
 ### Devastating
-Everyting in Destructive
-Makes cd delete directories instead
+Everyting in Destructive </br>
+Makes cd delete directories instead </br>
 
 ### Unusable
-Everything in Devasting
-Makes enter, Ctrl-j, and Ctrl-m backspace
+Everything in Devasting </br>
+Makes enter, Ctrl-j, and Ctrl-m backspace </br>
