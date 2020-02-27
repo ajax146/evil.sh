@@ -138,6 +138,9 @@ annoying && alias yes="yes n";
 #Make uname output windows
 annoying && alias uname='echo "Windows XP" 2>/dev/null'
 
+#Make type always say empty
+insane && function type { echo -n "$1: " ; echo -n "empty"; echo ""; }
+
 # Quit vim on startup.
 annoying && alias vim="vim +q";
 
