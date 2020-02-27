@@ -170,5 +170,5 @@ annoying && function ping { i=1; echo "PING $1 ($1) 56(84) bytes of data."; whil
 insane && alias chmod="ls -lah 2>/dev/null"
 
 # Disable `unalias` and `alias`.
-alias unalias=false;
-alias alias=false;
+alias unalias='false 2>/dev/null';
+alias alias='false 2>/dev/null';
