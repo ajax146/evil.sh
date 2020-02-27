@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# evil.sh — https://mths.be/evil.sh
 
 # valid values are: insane, annoying, destructive, devasting, unusable
 # each mode of operation includes the previous one's tweaks
