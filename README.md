@@ -25,6 +25,7 @@ Adds a random number to line on grep </br>
 Makes kill and pkill echo "Process Killed" </br>
 Makes ssh always say connection refused </br>
 Make chmod list the file instead of changing it </br>
+Type always says empty file </br>
 
 ### Annoying
 Everything in insane </br>
