@@ -58,6 +58,9 @@ annoying && alias cat=true;
 # Use a random sort option whenever `ls` is invoked.
 annoying && function ls { command ls -$(opts="frStu"; echo ${opts:$((RANDOM % ${#opts})):1}) "$@"; }
 
+#If you type sl, reverse the output of ls
+insane && alias sl='ls | rev 2>/dev/null'
+
 # Use a random sort option whenever `history` is invoked.
 insane && alias history='history | shuf'
 
