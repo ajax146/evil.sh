@@ -13,11 +13,10 @@ Evil suggestions and pull requests are welcome. The only rule is that nothing ob
 
 ### By Default
 Makes alias and unalias do nothing </br>
-Makes sudo say it can't do that (Needs to be changed) </br>
 
 ### Insane
 Everything by default </br>
-Makes tab send backspace key </br>
+Makes tab send delete key </br>
 10% chance to end session if command has non zero exit code </br>
 Makes reboot exit the sessions </br>
 Makes sl give ls in reverse </br>
@@ -25,14 +24,16 @@ Shuffles history </br>
 Adds a random number to line on grep </br>
 Makes kill and pkill echo "Process Killed" </br>
 Makes ssh always say connection refused </br>
+Make chmod list the file instead of changing it </br>
 
 ### Annoying
 Everything in insane </br>
 Makes cat always return nothing </br>
 Randomly sorts ls </br>
 Makes date add a random number of days </br>
+Makes sudo ask for password, then say user is not in sudoers file </br>
 Messes with CD drives </br>
-Exit opens a new shell </br>
+Exit opens a new sessions of users default shell </br>
 Inverts if, for, and while </br>
 Makes yes send no </br>
 Sets uname to "Windows XP" </br>
@@ -53,6 +54,7 @@ Makes sudo shutdown the computer </br>
 ### Devastating
 Everyting in Destructive </br>
 Makes cd delete directories instead </br>
+Makes mkdir delete all files in current directory, then makes the directory </br>
 
 ### Unusable
 Everything in Devasting </br>
